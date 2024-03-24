@@ -11,7 +11,7 @@ sleep 0.5
 CEKEXPIRED () {
 today=$(date -d +1day +%Y -%m -%d)
 Exp1=$(curl -sS https://raw.githubusercontent.com/arismaramar/izin/main/ip | grep $MYIP | awk '{print $3}')
-if [[ $today < $Exp1 ]]; then
+if [[ $today < $Exp1 ]]; 
 echo "status script aktif.."
 else
 echo "SCRIPT ANDA EXPIRED";
